@@ -5,7 +5,7 @@ Module Program
 		Const MAX_INT = UInteger.MaxValue
 		Dim nDecNum = 0
 		Dim nBinPower = 1
-		Dim nMaxBinaryLen = Math.Truncate(Math.Log2(MAX_INT))
+		Dim nMaxBinaryLen = Math.Ceiling(Math.Log2(MAX_INT))
 		Dim oRegEx = New Regex("^[0-1]+$")
 		Console.WriteLine("Input a binary number")
 		Dim strLine = Console.ReadLine()
